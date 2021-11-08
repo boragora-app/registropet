@@ -9,7 +9,50 @@
 ---
 ### Necessidades
 ***O formulário precisa ter os seguintes campos:***
-  - Nome do bicho
-  - Nome do dono
-  - ...
-      
+### Dados do requerente
+  - Nome 
+  - RG
+  - CPF
+  - Nacionalidade
+  - Estado civil
+  - Profissão
+  - Endereço completo
+  - Telefone
+  - Email
+  - Upload docs pessoais
+
+### Dados dos 2 Guardiões
+  - Nome 
+  - RG
+  - CPF
+  - Estado civil
+  - Profissão
+  - Endereço completo
+  - Upload docs pessoais
+
+### Dados do Pet
+  - Nome 
+  - Espécie
+  - Raça
+  - Sexo
+  - Idade
+  - Data de nascimento
+  - Sinais característicos
+  - Pelugem / Plumagem
+  - RG (CBKC)
+  - Microchip
+  - Upload de fotos do Pet
+
+### Dados do Registro
+  - Protocolo
+  - Data do protocolo
+  - Numero de registro
+  - Data de registro
+  - Livro de registro
+  - Funcionário
+  - Selo de fiscalização
+  - Emolumentos
+  - Taxa judiciária
+  - Fundos
+  - Valor total
+
