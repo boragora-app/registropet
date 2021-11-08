@@ -7,9 +7,9 @@
   O registro também pode facilitar o transporte em viagens e ajudar em casos de roubo ou desaparecimento.
 
 ---
-### Necessidades
-***O formulário precisa ter os seguintes campos:***
-### Dados do requerente
+### O formulário precisa ter os seguintes campos:
+
+***Dados do requerente***
   - Nome 
   - RG
   - CPF
@@ -21,7 +21,7 @@
   - Email
   - Upload docs pessoais
 
-### Dados dos 2 Guardiões
+***Dados dos 2 Guardiões***
   - Nome 
   - RG
   - CPF
@@ -30,7 +30,7 @@
   - Endereço completo
   - Upload docs pessoais
 
-### Dados do Pet
+***Dados do Pet***
   - Nome 
   - Espécie
   - Raça
@@ -43,7 +43,7 @@
   - Microchip
   - Upload de fotos do Pet
 
-### Dados do Registro
+***Dados do Registro***
   - Protocolo
   - Data do protocolo
   - Numero de registro
