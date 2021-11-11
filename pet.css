@@ -1,0 +1,12 @@
+* {
+  margin: 2px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+/* h1 {
+  color: orange;
+} */
