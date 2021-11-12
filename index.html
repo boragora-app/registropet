@@ -26,269 +26,277 @@
   <body>
     <h1>Registro de pets</h1>
 
-    <tipomodal tamanho="tal">
-      <form>
-        <fieldset>
-          <legend>Dados do requerente</legend>
-          <section class="form-row applicants">
+
+    <button class="show-modal">Log       In</button>
+
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      
+      <h1>Welcome back, friend😍</h1>
+      <form action="">
+          <fieldset>
+            <legend>Dados do requerente</legend>
+            <section class="form-row applicants">
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Seu nome"
+                  required
+                />
+              </div>
+  
+              <div class="form-group">
+                <label for="rg">RG</label>
+                <input
+                  type="text"
+                  id="rg"
+                  name="rg"
+                  placeholder="Seu RG"
+                  required
+                />
+              </div>
+  
+              <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input
+                  type="text"
+                  id="cpf"
+                  name="cpf"
+                  placeholder="Seu CPF"
+                  required
+                />
+              </div>
+  
+              <div class="form-group">
+                <label for="nacionality">Nacionalidade</label>
+                <select name="nacionality" id="nacionality">
+                  <option select disable value="">Selecione</option>
+                  <option value="brasilian">Brasileira</option>
+                  <option value="brasil">Estrangeira</option>
+                </select>
+              </div>
+  
+              <div class="form-group">
+                <label for="status-civil">Estado Civil</label>
+                <select name="status-civil" id="status-civil">
+                  <option select disable value="">Selecione</option>
+                  <option value="casado">Solteiro (a)</option>
+                  <option value="casado">Casado (a)</option>
+                  <option value="casado">Separa do(a)</option>
+                  <option value="casado">Viúvo (a)</option>
+                </select>
+              </div>
+  
+              <div class="form-group">
+                <label for="profession">Profissão</label>
+                <input
+                  type="text"
+                  id="profession"
+                  name="profession"
+                  placeholder="Sua profissão"
+                  required
+                />
+              </div>
+  
+              <div class="form-group">
+                <label for="">Endereço</label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  placeholder="Seu endereço"
+                  required
+                />
+              </div>
+  
+              <div class="form-group">
+                <label for="phone">Telefone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Seu telefone"
+                  required
+                />
+              </div>
+  
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Seu email" required />
+              </div>
+  
+              <div class="form-group">
+                <label for="docs">Documentos Pessoais</label>
+                <input type="file" name="docs" id="docs" />
+              </div>
+            </section>
+          </fieldset>
+          <br/>
+          <fieldset>
+            <legend>Guardiões</legend>
+            <section class="form-row guardians"></section>
+          </fieldset>
+          <fieldset>
+            <legend>Dados do seu pet</legend>
+            <section class="form-row pet">
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Nome do pet"
+                  required
+                />
+              </div>
+  
+              <div class="form-group">
+                <label for="specie">Espécie</label>
+                <input
+                  type="text"
+                  id="specie"
+                  name="specie"
+                  placeholder="Espécie do pet"
+                  required
+                />
+              </div>
+  
+              <div class="form-group">
+                <label for="specie">Raça</label>
+                <input
+                  type="text"
+                  id="breed"
+                  name="breed"
+                  placeholder="Raça do pet"
+                  required
+                />
+              </div>
+  
+              <div class="form-group">
+                <label for="">Sexo</label>
+                <select name="gender" id="gender">
+                  <option select disable value="">Selecione</option>
+                  <option value="casado">Macho</option>
+                  <option value="casado">Fêmea</option>
+                </select>
+              </div>
+  
+              <div class="form-group">
+                <label for="age">Idade</label>
+                <input
+                  type="text"
+                  id="age"
+                  name="age"
+                  placeholder="Idade do pet"
+                />
+              </div>
+  
+              <div class="form-group">
+                <label for="date-of-birth">Data de nascimento</label>
+                <input type="date" id="date-of-birth" name="date-of-birth" />
+              </div>
+  
+              <div class="form-group">
+                <label for="characteristic-signs">Sinais característicos</label>
+                <textarea
+                  name="characteristic-signs"
+                  id="characteristic-signs"
+                  cols="30"
+                  rows="5"
+                ></textarea>
+              </div>
+  
+              <div class="form-group">
+                <label for="fur-plumage">Pelugem/Plumagem</label>
+                <input
+                  type="text"
+                  id="fur-plumage"
+                  name="fur-plumage"
+                  placeholder="Pelugem/Plumagem"
+                />
+              </div>
+  
+              <div class="form-group">
+                <label for="rg">RG</label>
+                <input
+                  type="text"
+                  id="rg"
+                  name="rg"
+                  placeholder="RG (CBKC)"
+                  required
+                />
+              </div>
+  
+              <div class="form-group">
+                <label for="microchip">Microchip</label>
+                <label for="microchip">
+                  <input
+                    type="radio"
+                    id="microchip"
+                    name="microchip"
+                    value="yes"
+                  />
+                  Sim
+                </label>
+                <label for="microchip">
+                  <input
+                    type="radio"
+                    id="microchip"
+                    name="microchip"
+                    value="no"
+                  />
+                  Não
+                </label>
+              </div>
+  
+              <div class="form-group">
+                <label for="photos">Fotos do pet</label>
+                <input type="file" name="photos" id="photos" />
+              </div>
+            </section>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Dados do Registro</legend>
+          <section class="form-row register">
             <div class="form-group">
-              <label for="name">Nome</label>
+              <label for="">Protocolo</label>
               <input
                 type="text"
-                id="name"
-                name="name"
-                placeholder="Seu nome"
-                required
+                name="protocol"
+                id="protocol"
+                placeholder="Número do Protocolo"
               />
             </div>
-
+  
             <div class="form-group">
-              <label for="rg">RG</label>
+              <label for="protocol-date">Data do protocolo</label>
+              <input type="date" name="protocol-date" id="protocol-date" />
+            </div>
+  
+            <div class="form-group">
+              <label for="register">Número do registro</label>
               <input
                 type="text"
-                id="rg"
-                name="rg"
-                placeholder="Seu RG"
-                required
+                name="register"
+                id="register"
+                placeholder="Número do registro"
               />
             </div>
-
+  
             <div class="form-group">
-              <label for="cpf">CPF</label>
-              <input
-                type="text"
-                id="cpf"
-                name="cpf"
-                placeholder="Seu CPF"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="nacionality">Nacionalidade</label>
-              <select name="nacionality" id="nacionality">
-                <option select disable value="">Selecione</option>
-                <option value="brasilian">Brasileira</option>
-                <option value="brasil">Estrangeira</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="status-civil">Estado Civil</label>
-              <select name="status-civil" id="status-civil">
-                <option select disable value="">Selecione</option>
-                <option value="casado">Solteiro (a)</option>
-                <option value="casado">Casado (a)</option>
-                <option value="casado">Separa do(a)</option>
-                <option value="casado">Viúvo (a)</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="profession">Profissão</label>
-              <input
-                type="text"
-                id="profession"
-                name="profession"
-                placeholder="Sua profissão"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="">Endereço</label>
-              <input
-                type="text"
-                id="address"
-                name="address"
-                placeholder="Seu endereço"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="phone">Telefone</label>
-              <input
-                type="tel"
-                name="phone"
-                id="phone"
-                placeholder="Seu telefone"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Seu email" required />
-            </div>
-
-            <div class="form-group">
-              <label for="docs">Documentos Pessoais</label>
-              <input type="file" name="docs" id="docs" />
+              <label for="register-date">Data do registro</label>
+              <input type="date" name="register-date" id="register-date" />
             </div>
           </section>
         </fieldset>
-        <br/>
-        <fieldset>
-          <legend>Guardiões</legend>
-          <section class="form-row guardians"></section>
-        </fieldset>
-        <fieldset>
-          <legend>Dados do seu pet</legend>
-          <section class="form-row pet">
-            <div class="form-group">
-              <label for="name">Nome</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Nome do pet"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="specie">Espécie</label>
-              <input
-                type="text"
-                id="specie"
-                name="specie"
-                placeholder="Espécie do pet"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="specie">Raça</label>
-              <input
-                type="text"
-                id="breed"
-                name="breed"
-                placeholder="Raça do pet"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="">Sexo</label>
-              <select name="gender" id="gender">
-                <option select disable value="">Selecione</option>
-                <option value="casado">Macho</option>
-                <option value="casado">Fêmea</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="age">Idade</label>
-              <input
-                type="text"
-                id="age"
-                name="age"
-                placeholder="Idade do pet"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="date-of-birth">Data de nascimento</label>
-              <input type="date" id="date-of-birth" name="date-of-birth" />
-            </div>
-
-            <div class="form-group">
-              <label for="characteristic-signs">Sinais característicos</label>
-              <textarea
-                name="characteristic-signs"
-                id="characteristic-signs"
-                cols="30"
-                rows="5"
-              ></textarea>
-            </div>
-
-            <div class="form-group">
-              <label for="fur-plumage">Pelugem/Plumagem</label>
-              <input
-                type="text"
-                id="fur-plumage"
-                name="fur-plumage"
-                placeholder="Pelugem/Plumagem"
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="rg">RG</label>
-              <input
-                type="text"
-                id="rg"
-                name="rg"
-                placeholder="RG (CBKC)"
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <label for="microchip">Microchip</label>
-              <label for="microchip">
-                <input
-                  type="radio"
-                  id="microchip"
-                  name="microchip"
-                  value="yes"
-                />
-                Sim
-              </label>
-              <label for="microchip">
-                <input
-                  type="radio"
-                  id="microchip"
-                  name="microchip"
-                  value="no"
-                />
-                Não
-              </label>
-            </div>
-
-            <div class="form-group">
-              <label for="photos">Fotos do pet</label>
-              <input type="file" name="photos" id="photos" />
-            </div>
-          </section>
-        </fieldset>
-        <br />
-        <fieldset>
-          <legend>Dados do Registro</legend>
-        <section class="form-row register">
-          <div class="form-group">
-            <label for="">Protocolo</label>
-            <input
-              type="text"
-              name="protocol"
-              id="protocol"
-              placeholder="Número do Protocolo"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="protocol-date">Data do protocolo</label>
-            <input type="date" name="protocol-date" id="protocol-date" />
-          </div>
-
-          <div class="form-group">
-            <label for="register">Número do registro</label>
-            <input
-              type="text"
-              name="register"
-              id="register"
-              placeholder="Número do registro"
-            />
-          </div>
-
-          <div class="form-group">
-            <label for="register-date">Data do registro</label>
-            <input type="date" name="register-date" id="register-date" />
-          </div>
-        </section>
-      </fieldset>
+        <button type="submit">Log in</button>
       </form>
-    </tipomodal>
+    </div>
+    <div class="overlay hidden"></div>
 
     <script src="pet.js"></script>
   </body>
