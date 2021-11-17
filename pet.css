@@ -1,13 +1,3 @@
-body {
-  display: grid;
-  place-items: center;
-}
-
-/* h1 {
-  color: orange;
-} */
-
-
 /* Modal */
 * {
   margin: 0px;
@@ -43,9 +33,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
-  max-width: 1200px;
+  max-width: 600px;
   background-color: white;
-  padding: 4rem;
+  padding: 2rem;
   border-radius: 5px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 10;
@@ -53,8 +43,8 @@ body {
 }
 
 .modal h1 {
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: orange;
 }
 
 p {
@@ -66,25 +56,40 @@ a {
 }
 
 form input,
-form button {
+form select,
+form button,
+form textarea {
   display: block;
   width: 100%;
-  margin: 1.3rem 0;
+  margin: 0.5rem auto 0.5rem auto;
   border-radius: 5px;
   border: none;
   outline: none;
-  padding: 1rem;
-  font-size: 1.1rem;
+  padding: 0.25rem;
+  font-size: 0.7rem;
 }
 
-form input {
+form button {
+  padding: 0.7rem;
+}
+
+form textarea {
+  height: 20%;
+}
+
+form input, select, textarea {
   box-shadow: inset 2px 2px 5px #babecc,     inset -5px -5px 10px #ffffff73;
+}
+
+form input.invalid {
+  background-color: #ffdddd;
 }
 
 form button {
   background-color: rgb(2, 0, 145);
   color: #fff;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -109,6 +114,84 @@ form button {
 }
 
 /* CLASS TO HIDE MODAL */
-.hidden {
+.hidden, .tab {
   display: none;
+}
+
+/* Style multi steps */
+
+.prev-next-buttons {
+  display: flex;
+  flex-direction: row;
+  float: right;
+}
+
+.prev-next-buttons button {
+  margin-inline: 1rem;
+}
+
+
+.step {
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: #198754;
+}
+
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.625rem;
+  color: #198754;
+}
+
+fieldset .form-row .form-group{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 20px;
+  place-items: center;
+}
+
+.form-group label {
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.form-group .microchip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.tab {
+  display: none;
+}
+
+.buttons button {
+  background-color: #198754;
+  overflow: auto;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+img {
+  width: 16px;
 }
